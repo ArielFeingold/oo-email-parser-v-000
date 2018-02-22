@@ -16,6 +16,6 @@ class EmailParser
   def self.parse(emails)
       emails.gsub(/,\s/, ' ').split(" ")
   end
-
+binding.pry
 
 end
