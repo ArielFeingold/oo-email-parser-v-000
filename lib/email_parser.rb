@@ -17,6 +17,6 @@ class EmailParser
     @@email_array <<  @emails.gsub(/,\s/, ' ').split(" ")
     @@email_array
   end
-# binding.pry
+binding.pry
 
 end
