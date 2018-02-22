@@ -12,12 +12,12 @@ class EmailParser
   def initialize(emails)
     @emails = emails
   end
-
+    binding.pry
   def parse
     @@email_array <<  @emails.gsub(/,\s/, ' ').split(" ")
     @@email_array
 
   end
-    binding.pry
+
 
 end
