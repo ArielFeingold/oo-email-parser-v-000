@@ -3,7 +3,7 @@
 # unique email addresses. The delimiters to support are commas (',')
 # or whitespace (' ').
 
-# require 'pry'
+require 'pry'
 class EmailParser
 
   attr_accessor :emails
@@ -16,8 +16,8 @@ class EmailParser
   def parse
     @@email_array <<  @emails.gsub(/,\s/, ' ').split(" ")
     @@email_array
-    binding.pry
-  end
 
+  end
+    binding.pry
 
 end
