@@ -7,10 +7,11 @@ require 'pry'
 class EmailParser
 
   attr_accessor :emails
+  email_array = []
 
   def initialize(emails)
     @emails = emails
-    self.class.parse(emails)
+    email_array << self.class.parse(emails)
   end
 
   def self.parse(emails)
