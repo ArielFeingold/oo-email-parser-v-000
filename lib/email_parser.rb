@@ -7,15 +7,15 @@
 class EmailParser
 
   attr_accessor :emails
-  @@email_array = []
+
 
   def initialize(emails)
     @emails = emails
   end
 
   def parse
-    @@email_array <<  @emails.gsub(/,\s/, ' ').split(" ")
-    @@email_array
+    @@email_result = @emails.gsub(/,\s/, ' ').split(" ")
+    @@email_result
 
   end
 
