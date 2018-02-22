@@ -11,7 +11,7 @@ class EmailParser
 
   def initialize(emails)
     @emails = emails
-    email_array << self.class.parse(emails)
+    @@email_array << self.class.parse(emails)
   end
 
   def self.parse(emails)
