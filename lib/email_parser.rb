@@ -14,7 +14,7 @@ class EmailParser
   end
 
   def parse
-    @@email_result = @emails.gsub(/,\s/, ' ').split(" ")
+    @@email_result = @emails.gsub(/,\s/, ' ').split(" ").unique
     @@email_result
 
   end
