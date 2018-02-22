@@ -7,7 +7,7 @@
 class EmailParser
 
   attr_accessor :emails
-  email_array = []
+  @@email_array = []
 
   def initialize(emails)
     @emails = emails
